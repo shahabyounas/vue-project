@@ -7,7 +7,7 @@
     "build": "vite build --base=/",
     "preview": "vite preview",
     "predeploy": "npm run build --base=/",
-    "deploy": "cd dist && cp index.html 404.html && cd .. && gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "clean": "rm -rf dist",
     "test:unit": "vitest",
     "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
