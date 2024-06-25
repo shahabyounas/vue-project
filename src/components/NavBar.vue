@@ -1,25 +1,23 @@
 <script setup>
 import { ref } from 'vue'
-import { RouterLink } from 'vue-router';
+import { RouterLink } from 'vue-router'
 const menus = ref([
-  { id: '1', name: 'Home', path: "/" },
-  { id: '2', name: 'Airports', path: "/airports" },
-  { id: '3', name: 'Runways', path: "/runways" },
-  { id: '4', name: 'MyDrive', path: "/mydrive" },
-  { id: '5', name: 'Parking', path: "/parking" },
-  { id: '6', name: 'About', path: "/about" },
+  { id: '1', name: 'Home', path: '/' },
+  { id: '2', name: 'Airports', path: '/airports' },
+  { id: '3', name: 'Runways', path: '/runways' },
+  { id: '4', name: 'MyDrive', path: '/mydrive' },
+  { id: '5', name: 'Parking', path: '/parking' },
+  { id: '6', name: 'About', path: '/about' }
 ])
 </script>
 
 <template>
   <header class="wrapper">
-    <h2>
-        CAVU AIPORTS
-    </h2>
+    <h2>International AIPORTS</h2>
     <nav class="navbar">
       <ul class="menus">
         <li v-for="menu in menus" :todo="menu" :key="menu.id">
-            <RouterLink :to="menu.path"> {{ menu.name}} </RouterLink>
+          <RouterLink :to="menu.path"> {{ menu.name }} </RouterLink>
         </li>
       </ul>
     </nav>
@@ -27,18 +25,18 @@ const menus = ref([
 </template>
 
 <style scoped>
-
 h2 {
-    font-weight: bolder;
-    padding: 0 2rem;
+  font-weight: bolder;
+  padding: 0 2rem;
+  text-transform: uppercase;
 }
 .wrapper {
-    display: flex;
-    /* position: fixed; */
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
-    height: 5rem;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  /* position: fixed; */
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+  height: 5rem;
+  width: 100%;
+  align-items: center;
 }
 
 .menus {
@@ -73,5 +71,4 @@ li a {
   box-sizing: border-box;
   padding: 0 2rem;
 }
-
 </style>

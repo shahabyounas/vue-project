@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <main>
@@ -7,17 +6,17 @@
       <div class="title-container">
         <h1 class="title animate-slide">
           Optimize Operations with our Airport Solutions, Venues, and Strategic Business Insights.
-      </h1>
-      <p class="description">
-        Unlock B2B success with <strong>CAUV </strong>, seamlessly connecting businesses to strategic airports, 
-        curated venues, and growth opportunities. Elevate operations and navigate corporate expansion effortlessly.
-         Your gateway to efficient, tailored solutions for unparalleled business aviation.
-      </p>
+        </h1>
+        <p class="description">
+          Unlock B2B success with <strong> International Airports </strong>, seamlessly connecting
+          businesses to strategic airports, curated venues, and growth opportunities. Elevate
+          operations and navigate corporate expansion effortlessly. Your gateway to efficient,
+          tailored solutions for unparalleled business aviation.
+        </p>
       </div>
     </section>
   </main>
 </template>
-
 
 <style scoped>
 .wrapper {
