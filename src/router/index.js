@@ -6,9 +6,8 @@ import ParkingView from '../views/ParkingView.vue'
 import MyDriveView from '../views/MyDriveView.vue'
 
 console.log('import.meta.env.BASE_URL', import.meta.env.BASE_URL)
-
 const router = createRouter({
-  history: createWebHistory('/vue-project'),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
@@ -43,7 +42,7 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
     },
-    { path: '/:pathMatch(.*)*', name: 'NotFound', component: HomeView }
+    { path: '/:pathMatch(.*)*', name: 'NotFound', component: ParkingView }
   ]
 })
 
